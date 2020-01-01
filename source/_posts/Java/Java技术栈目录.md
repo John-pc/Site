@@ -1,7 +1,7 @@
 title: Java技术栈目录
-categories: []
+categories: [ CLR ,C# , Net]
 date: 2020-01-01 22:02:19
-tags:
+tags:  [ CLR ,C# , Net]
 
 ---
 
