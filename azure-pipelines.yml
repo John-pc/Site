@@ -9,14 +9,11 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Installing Node.js...'
-
-- task: InstallSSHKey@0 # 导入SSH
+- task: InstallSSHKey@0
   inputs:
-    hostName: github.com
-    sshPublicKey: ssh-rsa ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDO4cFSn6BBuQdOoDdoMWxSGAIefseTbYiucmOKqZiH4eYScydSzasbo3mdASa5OSIARTe3OcTGT6oGxZL27YxuDYQXZW5zEnHWthZKw/R0X8++5dLLREYn8I197Rj3LXEJlHOOfrAwztVP8QZipms46+oPNHg6HuUvjBSqHLAqb9gixQy2ODfVfaEvgyEY9rPg3Ihl6Z3dlBZ53kQjKKfWqnCzw1oIF+3k0Nm838v8e+TJR2Q3eVHYOoMkLzT/vvdlrsuTfIiTSOz/gVgApWAKNBCior4agzTaC1z9FIuZPhPVf21H23IzlS/R0Lh2aqloYln1FNMtldMqBsl+jN7uiVsAA1sFDJ6pkP8hdibNI+5CjHjYPYPN3+GnEonR5o8utTVlTaJGJVITKhwpsyyfiOwSKDYETJv/bjIeB4wufGUqoIazST2/8RALleNEqthmI+St3pvywS+Mv+w5CbSPLiP2Ee7DVdoPjC3HdiuirAFMOgdqqCyGlBO9rBBA2Hk= wangheng@persagy.com
-    sshKeySecureFile: id_rsa # 对应私钥文件名
-  displayName: 'Installing SSH...'
-
+    knownHostsEntry: 'github.com'
+    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDO4cFSn6BBuQdOoDdoMWxSGAIefseTbYiucmOKqZiH4eYScydSzasbo3mdASa5OSIARTe3OcTGT6oGxZL27YxuDYQXZW5zEnHWthZKw/R0X8++5dLLREYn8I197Rj3LXEJlHOOfrAwztVP8QZipms46+oPNHg6HuUvjBSqHLAqb9gixQy2ODfVfaEvgyEY9rPg3Ihl6Z3dlBZ53kQjKKfWqnCzw1oIF+3k0Nm838v8e+TJR2Q3eVHYOoMkLzT/vvdlrsuTfIiTSOz/gVgApWAKNBCior4agzTaC1z9FIuZPhPVf21H23IzlS/R0Lh2aqloYln1FNMtldMqBsl+jN7uiVsAA1sFDJ6pkP8hdibNI+5CjHjYPYPN3+GnEonR5o8utTVlTaJGJVITKhwpsyyfiOwSKDYETJv/bjIeB4wufGUqoIazST2/8RALleNEqthmI+St3pvywS+Mv+w5CbSPLiP2Ee7DVdoPjC3HdiuirAFMOgdqqCyGlBO9rBBA2Hk= wangheng@persagy.com'
+    sshKeySecureFile: 'key'
 # 安装Hexo脚手架，Hexo依赖
 - script: |
     npm install -g hexo-cli
