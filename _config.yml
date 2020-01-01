@@ -93,7 +93,7 @@ deploy:
   type: git
   repo: git@github.com:Rabbit021/Rabbit021.github.io.git
   branch: master
-  name: Rabbito21
+  name: Rabbit021
   email: 635253084@qq.com
 #jsonContent
 jsonContent:
