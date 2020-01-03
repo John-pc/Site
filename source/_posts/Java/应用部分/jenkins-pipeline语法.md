@@ -8,6 +8,14 @@ tags: [应用部分, jenkins]
 
 
 
-# Jenkins Pipeline语法
+## Jenkins Pipeline
 
-- 
+- ### 创建和使用Jenkinsfile
+
+
+
+- ### 使用Docker
+
+
+
+- ### Jenkins Pipeline语法说明
